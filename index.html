@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-white shadow relative">
+    <div class="flex items-center justify-between px-4 py-2 border-b">
+      <div class="relative flex items-center gap-6">
+        <img src="./img/asaxiy logo.svg" alt="logo" class="h-full w-full">
+  
+        <button id="kategoriya-btn" 
+          class="font-bold hidden md:flex items-center bg-blue-600 text-white px-6 py-2 rounded-[10px] text-[15px] hover:bg-blue-700 transition gap-1">
+          <i class="fa-solid fa-bars mr-1"></i> Категории
+        </button>
+  
+        <div id="kategoriya-menu" 
+          class="absolute top-12 left-0 w-60 bg-white shadow-lg rounded-md max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+          <ul class="flex flex-col text-blue-700 text-sm">
+            <li class="px-4 py-2 hover:bg-blue-200 cursor-pointer">Smartfonlar</li>
+            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Maishiy texnika</li>
+            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Kitoblar</li>
+            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Televizorlar</li>
+            <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">Noutbuklar</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="hidden md:flex flex-1 max-w-2xl mx-6">
+        <input 
+          type="text" 
+          placeholder="Поиск..." 
+          class="flex-1 border px-4 py-2 rounded-l text-sm outline-none"
+        >
+        <button 
+          class="bg-blue-600 text-white text-[16px] px-6 py-2 rounded-r hover:bg-blue-700 transition"
+        >
+          Искать
+        </button>
+      </div>
+  
+      <div class="hidden md:flex items-center gap-8 text-gray-700 text-xs">
+        <a href="#" class="flex flex-col items-center hover:text-blue-600 transition">
+          <i class="fa-solid fa-scale-balanced text-lg"></i>
+          <span>Сравнение</span>
+        </a>
+        <a href="#" class="flex flex-col items-center hover:text-blue-600 transition">
+          <i class="fa-regular fa-credit-card text-lg"></i>
+          <span>Оплатить</span>
+        </a>
+        <a href="#" class="relative flex flex-col items-center hover:text-blue-600 transition">
+          <i class="fa-solid fa-cart-shopping text-lg"></i>
+          <span>Корзина</span>
+          <span class="absolute -top-1 right-0 bg-red-500 text-white text-[10px] px-1 rounded">0</span>
+        </a>
+        <a href="#" class="flex flex-col items-center hover:text-blue-600 transition">
+          <i class="fa-regular fa-heart text-lg"></i>
+          <span>Избранное</span>
+        </a>
+        <a href="#" class="flex flex-col items-center hover:text-blue-600 transition">
+          <i class="fa-solid fa-globe text-lg"></i>
+          <span>O'zbekcha</span>
+        </a>
+        <a href="#" class="flex flex-col items-center hover:text-blue-600 transition">
+          <i class="fa-regular fa-user text-lg"></i> 
+          <span>Войти</span>
+        </a>
+      </div>
+  
+      <button id="menu-btn" class="md:hidden text-2xl">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  
+    <div class="hidden md:flex justify-center gap-12 px-6 py-3 text-base text-gray-700 font-medium">
+      <a href="#" class="group relative">Супер цена
+        <span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#" class="group relative">0-0-6
+        <span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#" class="group relative">Лучшее для студентов
+        <span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#" class="group relative">Смартфоны
+        <span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#" class="group relative">Бытовая техника
+        <span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#" class="group relative">Книги
+        <span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#" class="group relative">Телевизоры
+        <span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#" class="group relative">Ноутбуки
+        <span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+    </div>
+  
+    <div id="mobile-menu" 
+    class="absolute top-full left-0 w-full bg-white shadow h-0 overflow-hidden transition-all duration-500 ease-in-out flex flex-col gap-3 px-4 text-gray-700 text-sm md:hidden">
+    <input type="text" placeholder="Qidirish..." class="border px-2 py-2 rounded my-2 w-full">
+    <a href="#">Супер цена</a>
+    <a href="#">0-0-6</a>
+    <a href="#">Лучшее для студентов</a>
+    <a href="#">Смартфоны</a>
+    <a href="#">Бытовая техника</a>
+    <a href="#">Книги</a>
+    <a href="#">Телевизоры</a>
+    <a href="#">Ноутбуки</a>
+  </div>
+</header>
+
+ 
+    <script src="./menyu.js"></script>
+</body>
+</html>
