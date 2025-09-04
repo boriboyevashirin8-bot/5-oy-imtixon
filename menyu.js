@@ -5,11 +5,11 @@ const menuBtn = document.getElementById("menu-btn");
 
   menuBtn.addEventListener("click", () => {
     if (menuOchilgan) {
-      mobileMenu.style.height = "0px";     // yopiladi
+      mobileMenu.style.height = "0px";     
     } else {
-      mobileMenu.style.height = "300px";   // ochiladi
+      mobileMenu.style.height = "300px";   
     }
-    menuOchilgan = !menuOchilgan;          // qiymatni almashtiramiz
+    menuOchilgan = !menuOchilgan;         
   });
 
 const kategoriyaBtn = document.getElementById("kategoriya-btn");

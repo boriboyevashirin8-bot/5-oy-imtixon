@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+#mobile-menu{
+    z-index: 999;
+}
+#kategoriya-menu{
+    z-index: 999;
+}
