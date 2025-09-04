@@ -58,12 +58,15 @@
         <a href="#" class="relative flex flex-col items-center hover:text-blue-600 transition">
           <i class="fa-solid fa-cart-shopping text-lg"></i>
           <span>Корзина</span>
-          <span class="absolute -top-1 right-0 bg-red-500 text-white text-[10px] px-1 rounded">0</span>
+          <span id="cart-count" class="absolute -top-1 right-0 bg-blue-500 text-white text-[10px] px-1 rounded">0</span>
         </a>
-        <a href="#" class="flex flex-col items-center hover:text-blue-600 transition">
+        
+        <a href="#" class="relative flex flex-col items-center hover:text-blue-600 transition">
           <i class="fa-regular fa-heart text-lg"></i>
           <span>Избранное</span>
+          <span id="fav-count" class="absolute -top-1 right-0 bg-blue-500 text-white text-[10px] px-1 rounded">0</span>
         </a>
+        
         <a href="#" class="flex flex-col items-center hover:text-blue-600 transition">
           <i class="fa-solid fa-globe text-lg"></i>
           <span>O'zbekcha</span>
@@ -119,8 +122,181 @@
     <a href="#">Ноутбуки</a>
   </div>
 </header>
+<main>
+  <div id="card" 
+  class="w-[90%] m-auto mt-8 grid 
+         grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 
+         gap-6 sm:gap-8 lg:gap-10">
+</div>
+<section class="max-w-7xl mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-6 mt-[60px]">
+
+  <div class="bg-gradient-to-r from-[#0056d2] to-[#0a63e5] rounded-2xl p-6 flex flex-col md:flex-row items-center text-white shadow-md">
+    <div class="flex-1 flex flex-col md:flex-row items-center md:items-start gap-6 text-center items-center">
+      <div class="text-center md:text-left">
+        <img src="./img/logo3.svg" alt="Asaxiy Logo" class="mb-3 w-28 md:w-32 mx-auto md:mx-0">
+        <h2 class="text-sm sm:text-base md:text-lg font-semibold leading-snug mt-[10px]">
+          Сканируйте QR-код и скачивайте <br>
+          приложение и совершайте покупки <br>
+          быстро и удобно
+        </h2>
+        <img src="./img/qr.svg" alt="QR code" class="h-28 w-28 mt-[5px]">
+      </div>
+    </div>
+    <div class="flex-shrink-0 mt-6 md:mt-0">
+      <img src="./img/phone1.png" alt="Phone" class="w-full sm:w-48 md:w-52 lg:w-60">
+    </div>
+  </div>
+
+  <div class="bg-gradient-to-r from-[#f97316] to-[#ff6a00] rounded-2xl p-6 flex flex-col md:flex-row items-center text-center text-white shadow-md">
+    <div class="flex-1 flex flex-col md:flex-row items-center md:items-start gap-6">
+      <div class="text-center md:text-left text-center">
+        <img src="./img/logo.svg" alt="Asaxiy Books Logo" class="mb-3 w-28 md:w-32 mx-auto md:mx-0 ">
+        <h2 class="text-sm sm:text-base md:text-lg font-semibold leading-snug mt-[10px]">
+          Скачайте приложение Asaxiy <br>
+          Books и покупайте книги легко и <br>
+               быстро.
+        </h2>
+        <img src="./img/qr.svg" alt="QR code" class="h-28 w-28 mt-[5px]">
+      </div>
+    
+    </div>
+    <div class="flex-shrink-0 mt-6 md:mt-0">
+      <img src="./img/PHON2.png" alt="Phone" class="w-full sm:w-48 md:w-52 lg:w-60">
+    </div>
+  </div>
+
+</section>
+
+<section class="max-w-7xl mx-auto px-4 py-8 mt-[30px]">
+  <h3 class="text-[20px] font-bold mb-4">Известные бренды</h3>
+  <div class="grid grid-cols-3 sm:grid-cols-6 gap-6 items-center">
+    <div class="flex justify-center"><img src="./img/xof.png" alt="Brand"></div>
+    <div class="flex justify-center"><img src="img/nuqtalat.png" alt="Brand"></div>
+    <div class="flex justify-center"><img src="./img/apple.png" alt="Apple"></div>
+    <div class="flex justify-center"><img src="img/18.png" alt="Acer"></div>
+    <div class="flex justify-center"><img src="./img/leno.png" alt="Lenovo"></div>
+    <div class="flex justify-center"><img src="./img/xi.png" alt="Brand"></div>
+  </div>
+</section>
+
+
+<section class="max-w-7xl mx-auto px-4 py-8">
+  <div class="bg-white rounded-2xl shadow-md p-6 md:p-8">
+    <h2 class="text-[36px] md:text-[40px] mb-6 text-center">
+      О компании <span class="font-bold">Asaxiy</span>
+    </h2>
+    <p class="text-[16px] md:text-base mb-6 leading-relaxed text-gray-700">
+      Главное преимущество нашей компании, которая занимается поставками бытовой техники и электроники в Узбекистане – многолетний опыт работы и заслуженное доброе имя. 
+      С момента своего развития интернет–магазин Asaxiy и его команда неустанно следит за тенденциями спроса потребительского рынка, что дает нам возможность всегда быть в курсе самых последних технологий и инновационных решений. 
+      Специалисты компании внимательно изучают желания наших клиентов, поэтому ресурс постоянно обновляется качественными новинками, имеющими доступную стоимость.
+    </p>
+
+    <div class="border-t py-3 text-[16px] md:text-base">
+      <p class="font-semibold cursor-pointer">Принцип работы компании</p>
+    </div>
+    <div class="border-t py-3 text-[16px] md:text-base">
+      <p class="font-semibold cursor-pointer">Наши преимущества</p>
+    </div>
+
+   
+    <div class="border-t pt-4 text-sm md:text-base space-y-1">
+      <p><strong>"Asaxiy Books" ООО</strong></p>
+      <p>Регистрация: 646439</p>
+      <p>ИНН: 305829008</p>
+      <p>Директор: Allayev Firuz Abdunasimovich</p>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="bg-white text-gray-700 mt-10 border-t border-gray-200">
+  <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-5 gap-8 text-sm">
+
+    <div>
+      <h4 class="font-bold mb-3 text-[20px]">Об Asaxiy</h4>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-blue-600">О нас</a></li>
+        <li><a href="#" class="hover:text-blue-600">Карьера в Asaxiy</a></li>
+        <li><a href="#" class="hover:text-blue-600">Лицензии и сертификаты</a></li>
+        <li><a href="#" class="hover:text-blue-600">Политика Asaxiy</a></li>
+        <li><a href="#" class="hover:text-blue-600">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold mb-3 text-[20px]">Покупателям</h4>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-blue-600">FAQ</a></li>
+        <li><a href="#" class="hover:text-blue-600">Статус «E-Ijro ishonch»</a></li>
+        <li><a href="#" class="hover:text-blue-600">Asaxiy Plus</a></li>
+        <li><a href="#" class="hover:text-blue-600">Оферта для рассрочки</a></li>
+        <li><a href="#" class="hover:text-blue-600">Публичная оферта</a></li>
+        <li><a href="#" class="hover:text-blue-600">Оферта для онлайн-курсов</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold mb-3 text-[20px]">Информация</h4>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-blue-600">Наши бренды</a></li>
+        <li><a href="#" class="hover:text-blue-600">Новости</a></li>
+        <li><a href="#" class="hover:text-blue-600">Блог</a></li>
+        <li><a href="#" class="hover:text-blue-600">Карта сайта</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold mb-3 text-[20px]">Доставка и магазины</h4>
+      <ul class="space-y-3">
+        <li><a href="#" class="flex items-center space-x-2 hover:text-blue-600"><i class="fas fa-store"></i><span>Наши магазины</span></a></li>
+        <li><a href="#" class="flex items-center space-x-2 hover:text-blue-600"><i class="fas fa-map-marker-alt"></i><span>Пункты выдачи</span></a></li>
+        <li><a href="#" class="flex items-center space-x-2 hover:text-blue-600"><i class="fas fa-truck"></i><span>Доставка</span></a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold mb-3 text-[20px]">Для связи</h4>
+      <ul class="space-y-2">
+        <li class="flex items-center space-x-2"><i class="fas fa-phone"></i><span>+998 71 200 01 05</span></li>
+        <li class="flex items-center space-x-2"><i class="fas fa-envelope"></i><span>info@asaxiy.uz</span></li>
+        <li class="flex items-center space-x-2"><i class="fab fa-telegram"></i><span>Telegram bot</span></li>
+        <li class="flex items-center space-x-2"><i class="fas fa-map-marker-alt"></i><span>ул. Гавхар 124, Ташкент</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 py-6">
+    <h4 class="font-bold mb-3 text-[20px]">Виды оплаты</h4>
+    <div class="flex flex-wrap gap-4 items-center">
+      <img src="uzum.png" alt="Uzum" class="h-8">
+      <img src="payme.png" alt="Payme" class="h-8">
+      <img src="apelsin.png" alt="Apelsin" class="h-8">
+      <img src="unired.png" alt="Unired" class="h-8">
+      <img src="xazna.png" alt="Xazna" class="h-8">
+      <img src="click.png" alt="Click" class="h-8">
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center border-t border-gray-200">
+    <p class="text-xs text-center md:text-left mb-4 md:mb-0">
+      2015 – 2025 Интернет-магазин asaxiy.uz: Бытовая техника и др.  
+      Доставка товаров осуществляется во все регионы. Все права защищены.
+    </p>
+    <div class="flex space-x-4 text-lg">
+      <a href="#" class="hover:text-blue-600"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="hover:text-blue-600"><i class="fab fa-telegram"></i></a>
+      <a href="#" class="hover:text-blue-600"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="hover:text-blue-600"><i class="fab fa-youtube"></i></a>
+      <a href="#" class="hover:text-blue-600"><i class="fas fa-rss"></i></a>
+    </div>
+  </div>
+</footer>
+
+
 
  
     <script src="./menyu.js"></script>
+    <script src="./main.js"></script>
+   
 </body>
 </html>
